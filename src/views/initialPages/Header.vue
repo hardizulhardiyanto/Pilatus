@@ -4,7 +4,6 @@
             color="white"
             dark
             fixed
-            height="70%"
             elevation="1"
     >
         <div class="logoPilatus">
@@ -20,9 +19,9 @@
         </div>
         <v-spacer />
         <div class="hidden-sm-and-down menu_sec">
-            <v-btn plain class="ma-1 btn_menu" color="primary">Home</v-btn>
-            <v-btn plain class="ma-1 btn_menu" color="primary">Profile</v-btn>
-            <v-btn plain class="ma-1 btn_menu" color="primary">Schedule</v-btn>
+            <v-btn plain class="ma-1 btn_menu" color="primary" :ripple="false" >Home</v-btn>
+            <v-btn plain class="ma-1 btn_menu" color="primary" :ripple="false">Profile</v-btn>
+            <v-btn plain class="ma-1 btn_menu" color="primary" :ripple="false">Schedule</v-btn>
         </div>
     </v-app-bar>
 </template>
@@ -48,7 +47,7 @@
     }
     .btn_menu {
         text-transform: unset !important;
-        font-family: "Roboto Black";
+        font-family: "Roboto Bold";
     }
     .menu_sec{
         position: absolute;

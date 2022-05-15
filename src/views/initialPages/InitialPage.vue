@@ -1,16 +1,23 @@
 <template>
     <div>
         <Header />
-        <v-container style="height: 100%; background-color: red">Initial Page</v-container>
+        <v-main style="background-color: red">
+            <Section1 />
+            <v-container>
+                Absoulute
+            </v-container>
+        </v-main>
     </div>
 </template>
 
 <script>
     import Header from "./Header";
+    import Section1 from "./Section1";
     export default {
         name: "InitialPage",
         components: {
-            Header
+            Section1,
+            Header,
         },
     }
 </script>
