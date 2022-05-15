@@ -1,0 +1,1 @@
+export const logoPilatus = require('../assets/img/logo_pilatus.png');

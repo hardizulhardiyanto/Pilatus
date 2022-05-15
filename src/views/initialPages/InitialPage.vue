@@ -1,10 +1,17 @@
 <template>
-    <v-container style="height: 100%; background-color: red">Initial Page</v-container>
+    <div>
+        <Header />
+        <v-container style="height: 100%; background-color: red">Initial Page</v-container>
+    </div>
 </template>
 
 <script>
+    import Header from "./Header";
     export default {
-        name: "InitialPage"
+        name: "InitialPage",
+        components: {
+            Header
+        },
     }
 </script>
 
